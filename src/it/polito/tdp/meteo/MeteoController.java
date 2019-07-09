@@ -29,6 +29,8 @@ public class MeteoController {
 	@FXML
 	private TextArea txtResult;
 
+	private Model model;
+
 	@FXML
 	void doCalcolaSequenza(ActionEvent event) {
 
@@ -45,6 +47,11 @@ public class MeteoController {
 		assert btnCalcola != null : "fx:id=\"btnCalcola\" was not injected: check your FXML file 'Meteo.fxml'.";
 		assert btnUmidita != null : "fx:id=\"btnUmidita\" was not injected: check your FXML file 'Meteo.fxml'.";
 		assert txtResult != null : "fx:id=\"txtResult\" was not injected: check your FXML file 'Meteo.fxml'.";
+	}
+
+	public void setModel(Model model) {
+		this.model = model;
+		
 	}
 
 }
